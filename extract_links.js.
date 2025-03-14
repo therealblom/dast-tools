@@ -1,3 +1,4 @@
+```javascript
 for (let link of document.links) { 
     if (link.href.indexOf('en.wikipedia') == -1) { 
         console.log(link.href);
