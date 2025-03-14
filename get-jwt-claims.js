@@ -15,7 +15,7 @@ JSON.parse(atob(jwt.split('.')[1]));
  * - If you want to securely send the token elsewhere, you can replace `console.log` with your desired logic.
  */
 
-let jwt = sessionStorage.getItem("Token");  // Retrieve JWT from sessionStorage
+let jwt = sessionStorage.getItem("Token");  // Retrieve JWT from sessionStorage, or set to string using '' if already known
 
 // Decode the payload and parse it into a JSON object
 let decodedPayload = JSON.parse(atob(jwt.split('.')[1]));
