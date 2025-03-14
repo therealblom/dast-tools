@@ -6,7 +6,7 @@ for (let link of document.links) {
 
 
 /**
- * Extract and log all links from the current webpage, excluding Wikipedia links.
+ * Extract and log all links from the current webpage, excluding Wikipedia links. Useful to verify the scope of an assessment/scan.
  * 
  * How to Use:
  * 1. Open a website in your browser.
