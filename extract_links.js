@@ -1,10 +1,8 @@
-```javascript
 for (let link of document.links) { 
     if (link.href.indexOf('en.wikipedia') == -1) { 
         console.log(link.href);
     }
 }
-
 
 /**
  * Extract and log all links from the current webpage, excluding Wikipedia links. Useful to verify the scope of an assessment/scan.
