@@ -1,0 +1,32 @@
+## Enumerate files in single command
+curl https://example.com/docs/[1-99].pdf
+curl https://example.com/pets/{fish,dog,cat,cow}-care.php
+
+## Helpful curl options
+-A --user-agent <name>
+-L --follow redirects
+-D --dump-header to <file>
+-v --verbose
+-k --insecure (Skips SSL verification and connects to the server, useful for checking TLS/SSL vulnerabilities (e.g., weak ciphers, expired certificates)).
+-i --include response headers in output (Useful for verifying content types and CORS headers)
+-I --Fetches only the HTTP headers (verify status codes ex. 404 etc.)
+-o --output <file>
+-H --header from <header/@file> (include API keys from a file! Hides api key from logs/screenshots etc.)
+-x --Routes the request through a proxy server
+-X --protocol (GET/POST/UPDATE)
+-S --show errors
+
+## Awesome for APIs
+curl "http://{dev,int,www}.host.com/user/[0-9]" -o "#1_#2"
+
+
+## Send JSON data (common in REST APIs) in a POST request, which is useful for testing API endpoints.
+curl -X POST -H "Content-Type: application/json" -d '{"username": "test", "password": "123"}' http://example.com/api/login
+
+
+
+
+
+
+# Enumerate files recursively in *nix
+ls -lR
